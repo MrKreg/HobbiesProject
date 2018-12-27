@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hobbies.apps.HobbiesConfig'
+    'hobbies.apps.HobbiesConfig',
 ]
 
 MIDDLEWARE = [

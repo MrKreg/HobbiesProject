@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Hello world!{% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Who Am I?</h3>
+    <img src="{% static 'me.png' %}" class="img-responsive rounded-circle margin" style="display:inline" alt="Me" width="350" height="350">
+    <h3>I'm a trainee software developer</h3>
+</div>
+{% endblock %}
