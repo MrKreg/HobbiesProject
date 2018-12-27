@@ -3,25 +3,30 @@ body {
     line-height: 1.8;
     color: #f5f6f7;
     min-height: 100vh !important;
+    display: flex;
+    flex-direction: column;
 }
 p {font-size: 16px;}
 .main {
-    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 .margin {margin-bottom: 45px;}
-.bg-1 { 
+.bg-1 {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
 }
-.bg-2 { 
+.bg-2 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
 }
-.bg-3 { 
+.bg-3 {
     background-color: #ffffff; /* White */
     color: #555555;
 }
-.bg-4 { 
+.bg-4 {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
 }
@@ -44,29 +49,29 @@ p {font-size: 16px;}
 .contact-section {
     padding: 5rem 0 0;
   }
-  
+
   .contact-section .card {
     border: 0;
     border-bottom: 0.25rem solid #64a19d;
   }
-  
+
   .contact-section .card h4 {
     font-size: 0.8rem;
     font-family: 'Varela Round';
     text-transform: uppercase;
     letter-spacing: 0.15rem;
   }
-  
+
   .contact-section .card hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 3rem;
   }
-  
+
   .contact-section .social {
     margin-top: 5rem;
   }
-  
+
   .contact-section .social a {
     text-align: center;
     height: 3rem;
@@ -76,11 +81,11 @@ p {font-size: 16px;}
     line-height: 3rem;
     color: rgba(255, 255, 255, 0.7);
   }
-  
+
   .contact-section .social a:hover {
     color: rgba(0, 0, 0, 0.5);
   }
-  
+
   .contact-section .social a:active {
     color: #fff;
   }
@@ -88,6 +93,14 @@ p {font-size: 16px;}
 .bla{
     color: #2f2f2f;
 }
-.test{
+.test {
     padding-bottom: 10px;
+}
+.active {
+    font-weight: bold !important;
+}
+@media only screen and (max-width: 480px) {
+    .navbar-brand{
+        font-size: 0.9rem;
+    }
 }

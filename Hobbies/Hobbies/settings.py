@@ -23,9 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=tw3&_s(kbzl!j--z_vetowy@srr@=v@21t_r9^k8%f1ys-+98'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'mrkreg.pythonanywhere.com',
+]
 
 
 # Application definition
@@ -119,3 +121,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "/home/MrKreg/HobbiesProject/Hobbies/hobbies/static"

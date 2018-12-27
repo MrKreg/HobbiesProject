@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -22,21 +23,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Me</a>
+                    <a class="nav-link {% if "/" == request.path %}active{% endif %}"  href="/">Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">Info</a>
+                    <a class="nav-link {% if "/about" in request.path %}active{% endif %}" href="/about">Info</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacts">Contacts</a>
+                    <a class="nav-link {% if "/contacts" in request.path %}active{% endif %}" href="/contacts">Contacts</a>
                 </li>
             </ul>
         </div>
     </nav>
-    {% block content %}
-    {% endblock %}
+        {% block content %}
+        {% endblock %}
     <footer class="page-footer container-fluid bg-4 text-center">
-        <p>Simple project for SoftServe IT Academy</p> 
+        <p>Simple project for SoftServe IT Academy</p>
     </footer>
 </body>
 </html>

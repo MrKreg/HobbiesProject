@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 app_name = 'hobbies'
@@ -8,3 +8,4 @@ urlpatterns = [
     path('about', views.about_me, name='about_me'),
     path('contacts', views.contact_me, name='contact_me'),
 ]
+
